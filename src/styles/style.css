@@ -7,22 +7,36 @@
 }
 
 body {
-  background-color: #f3f3f3;
+  background-color: #1f1f1f;
 }
 
 h2 {
-  color: rgb(36, 36, 36);
+  color: rgb(255, 255, 255);
+}
+
+h3 {
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  width: 100%;
+  height: 100vh;
 }
 
 .form-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #cep-form {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 button {
@@ -43,6 +57,24 @@ input {
 }
 
 span {
-  color: rgb(63, 63, 63);
+  color: rgb(199, 199, 199);
   height: 20px;
+}
+
+.cep-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
